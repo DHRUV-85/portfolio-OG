@@ -88,7 +88,7 @@ app.use((err, req, res, next) => {
 // Start server
 const startServer = async () => {
   try {
-    await mongoose.connect(process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/portfolio")
+    await mongoose.connect(process.env.MONGODB_URI || process.env.MONGO_URI || "mongodb://127.0.0.1:27017/portfolio")
 
     logger.info(`✅ MongoDB Connected to ${mongoose.connection.name}`)
 

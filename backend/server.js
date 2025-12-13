@@ -19,6 +19,7 @@ const corsOptions = {
 }
 
 app.use(cors(corsOptions))
+app.options("*", cors(corsOptions)) 
 
 // Middleware
 app.use(express.json({ limit: "10mb" }))

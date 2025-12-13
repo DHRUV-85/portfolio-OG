@@ -288,7 +288,7 @@ export default function Home() {
   const featuredProjects = projects.filter((p) => p.featured);
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50 dark:from-slate-900 dark:via-gray-900 dark:to-blue-950 text-gray-900 dark:text-gray-100 transition-all duration-500">
+    <main className="min-h-screen bg-gradient-to-br from-[#FFEC5C] via-[#B4CF66] to-[#44803F] dark:from-[#146152] dark:via-[#44803F] dark:to-[#146152] text-gray-900 dark:text-gray-100 transition-all duration-500">
       {/* Custom CSS for animations */}
       <style jsx>{`
         @keyframes fadeInUp {
@@ -325,14 +325,14 @@ export default function Home() {
         }
 
         .gradient-text {
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          background: linear-gradient(135deg, #146152 0%, #44803F 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
         }
 
         .dark .gradient-text {
-          background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%);
+          background: linear-gradient(135deg, #B4CF66 0%, #FFEC5C 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
@@ -343,7 +343,7 @@ export default function Home() {
       {showScrollTop && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 z-50 p-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-full shadow-2xl transition-all duration-300 hover:scale-110 hover:shadow-blue-500/25"
+          className="fixed bottom-8 right-8 z-50 p-4 bg-gradient-to-r from-[#146152] to-[#44803F] hover:from-[#44803F] hover:to-[#B4CF66] text-white rounded-full shadow-2xl transition-all duration-300 hover:scale-110 hover:shadow-[#146152]/25"
           aria-label="Scroll to top"
         >
           <ChevronUp className="w-6 h-6" />
@@ -362,11 +362,11 @@ export default function Home() {
               <div className="relative w-80 h-80 mx-auto lg:w-96 lg:h-96">
                 {/* Animated background circles */}
                 <div
-                  className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 animate-spin"
+                  className="absolute inset-0 rounded-full bg-gradient-to-r from-[#146152] via-[#44803F] to-[#B4CF66] animate-spin"
                   style={{ animationDuration: "20s" }}
                 ></div>
                 <div
-                  className="absolute inset-2 rounded-full bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 animate-spin"
+                  className="absolute inset-2 rounded-full bg-gradient-to-r from-[#B4CF66] via-[#44803F] to-[#146152] animate-spin"
                   style={{
                     animationDuration: "15s",
                     animationDirection: "reverse",
@@ -376,24 +376,24 @@ export default function Home() {
                 {/* Profile image container */}
                 <div className="absolute inset-4 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-2xl">
                   <img
-                    src="https://i.pinimg.com/736x/5c/6c/1c/5c6c1c7ad77e9ae20d997f89ba0e80db.jpg"
+                    src="/src/assets/images/profile_image.jpeg"
                     alt="Dhruv Soni - Full Stack Developer"
                     className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
                   />
                 </div>
 
                 {/* Floating elements */}
-                <div className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full flex items-center justify-center shadow-lg floating">
-                  <Code className="w-8 h-8 text-white" />
+                <div className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-r from-[#FFEC5C] to-[#FF5A33] rounded-full flex items-center justify-center shadow-lg floating">
+                  <Code className="w-8 h-8 text-[#146152]" />
                 </div>
                 <div
-                  className="absolute -bottom-4 -left-4 w-16 h-16 bg-gradient-to-r from-green-400 to-blue-500 rounded-full flex items-center justify-center shadow-lg floating"
+                  className="absolute -bottom-4 -left-4 w-16 h-16 bg-gradient-to-r from-[#44803F] to-[#B4CF66] rounded-full flex items-center justify-center shadow-lg floating"
                   style={{ animationDelay: "2s" }}
                 >
                   <Zap className="w-6 h-6 text-white" />
                 </div>
                 <div
-                  className="absolute top-1/2 -left-8 w-12 h-12 bg-gradient-to-r from-pink-400 to-red-500 rounded-full flex items-center justify-center shadow-lg floating"
+                  className="absolute top-1/2 -left-8 w-12 h-12 bg-gradient-to-r from-[#146152] to-[#44803F] rounded-full flex items-center justify-center shadow-lg floating"
                   style={{ animationDelay: "4s" }}
                 >
                   <Palette className="w-5 h-5 text-white" />
@@ -404,12 +404,12 @@ export default function Home() {
             {/* Right side - Content */}
             <div className="text-center lg:text-left order-1 lg:order-2">
               <div className="mb-8">
-                <div className="inline-block px-4 py-2 bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900/30 dark:to-purple-900/30 rounded-full text-blue-700 dark:text-blue-300 font-semibold text-sm mb-6">
+                <div className="inline-block px-4 py-2 bg-gradient-to-r from-[#FFEC5C] to-[#B4CF66] dark:from-[#146152]/50 dark:to-[#44803F]/50 rounded-full text-[#146152] dark:text-[#FFEC5C] font-semibold text-sm mb-6">
                   👋 Welcome to my digital space
                 </div>
 
-                <h1 className="text-5xl md:text-7xl font-bold mb-6">
-                  <span className="block mb-2 text-gray-900 dark:text-white">
+                <h1 className="text-5xl md:text-7xl font-bold mb-6 font-display">
+                  <span className="block mb-2 text-gray-900 dark:text-white drop-shadow-lg">
                     Hello, I'm
                   </span>
                   <span className="gradient-text">
@@ -425,7 +425,7 @@ export default function Home() {
                 </h1>
               </div>
 
-              <div className="text-2xl md:text-3xl font-medium text-gray-600 dark:text-gray-300 mb-8 h-12">
+              <div className="text-2xl md:text-3xl font-medium text-gray-600 dark:text-gray-100 mb-8 h-12 font-display">
                 <TypeIt
                   options={{
                     strings: [
@@ -442,17 +442,18 @@ export default function Home() {
                 />
               </div>
 
-              <p className="text-xl text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-                Crafting exceptional digital experiences through innovative
-                design and cutting-edge technology. Specializing in scalable web
-                applications that drive business growth and user engagement.
+              <p className="text-xl text-gray-800 dark:text-gray-200 mb-12 max-w-2xl mx-auto lg:mx-0 leading-relaxed drop-shadow-md">
+                Transforming ideas into powerful digital solutions. As a Full Stack Developer, 
+                I architect and build high-performance web applications using modern technologies 
+                like React, Node.js, and MongoDB. Passionate about writing clean, scalable code 
+                that solves real-world problems and delivers exceptional user experiences.
               </p>
 
               {/* CTA buttons */}
               <div className="flex flex-wrap justify-center lg:justify-start gap-6 mb-12">
                 <a
                   href="#contact"
-                  className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-xl font-semibold text-lg transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-xl hover:scale-105"
+                  className="px-8 py-4 bg-gradient-to-r from-[#146152] to-[#44803F] hover:from-[#44803F] hover:to-[#B4CF66] text-white rounded-xl font-semibold text-lg transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-xl hover:scale-105"
                 >
                   Let's Connect
                   <ArrowRight className="w-5 h-5" />
@@ -462,40 +463,14 @@ export default function Home() {
                   href="/resume.pdf"
                   target="_blank"
                   rel="noreferrer"
-                  className="px-8 py-4 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-xl font-semibold text-lg transition-all duration-300 flex items-center gap-2 hover:scale-105"
+                  className="px-8 py-4 border-2 border-[#146152] dark:border-[#B4CF66] text-[#146152] dark:text-[#B4CF66] hover:bg-[#FFEC5C] dark:hover:bg-[#146152]/30 rounded-xl font-semibold text-lg transition-all duration-300 flex items-center gap-2 hover:scale-105"
                 >
                   <Download className="w-5 h-5" />
                   Resume
                 </a>
               </div>
 
-              {/* Quick stats */}
-              <div className="grid grid-cols-3 gap-8 pt-8 border-t border-gray-200 dark:border-gray-700">
-                <div className="text-center">
-                  <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">
-                    50+
-                  </div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400 font-medium">
-                    Projects
-                  </div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent mb-2">
-                    3+
-                  </div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400 font-medium">
-                    Years Exp
-                  </div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-2">
-                    98%
-                  </div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400 font-medium">
-                    Satisfaction
-                  </div>
-                </div>
-              </div>
+
             </div>
           </div>
         </div>
@@ -505,15 +480,15 @@ export default function Home() {
       <section
         ref={aboutRef}
         id="about"
-        className="py-20 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm opacity-0"
+        className="py-20 bg-white/70 dark:bg-[#146152]/30 backdrop-blur-sm opacity-0"
       >
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text font-display">
               About Me
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-6"></div>
-            <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+            <div className="w-24 h-1 bg-gradient-to-r from-[#146152] to-[#B4CF66] mx-auto mb-6"></div>
+            <p className="text-xl text-gray-600 dark:text-gray-200 max-w-3xl mx-auto">
               Passionate about creating digital solutions that make a difference
             </p>
           </div>
@@ -523,54 +498,63 @@ export default function Home() {
             <div className="relative">
               <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop"
-                  alt="Workspace"
-                  className="w-full h-auto hover:scale-105 transition-transform duration-700"
+                  src="/src/assets/images/about_real.jpeg"
+                  alt="About Dhruv Soni"
+                  className="w-full h-auto object-cover hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#146152]/20 to-transparent"></div>
               </div>
             </div>
 
             {/* Right - Content */}
             <div className="space-y-6">
-              <div className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-gray-200/50 dark:border-gray-700/50">
-                <h3 className="text-2xl font-bold mb-6 gradient-text">
+              <div className="bg-white/90 dark:bg-[#146152]/50 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-[#B4CF66]/30 dark:border-[#44803F]/30">
+                <h3 className="text-2xl font-bold mb-6 gradient-text font-display">
                   My Journey
                 </h3>
 
-                <div className="space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed">
+                <div className="space-y-4 text-gray-700 dark:text-gray-100 leading-relaxed">
                   <p>
-                    My passion for technology ignited during my teenage years
-                    when I built my first website. What began as curiosity has
-                    evolved into a fulfilling career creating digital
-                    experiences that solve real-world problems.
+                    I'm a passionate Full Stack Developer with 3+ years of experience building scalable, 
+                    high-performance web applications. My journey in software development is driven by a 
+                    relentless pursuit of excellence and a deep commitment to crafting solutions that 
+                    deliver measurable business value.
                   </p>
 
                   <p>
-                    With expertise spanning modern web technologies, cloud
-                    architecture, and user experience design, I bridge the gap
-                    between technical complexity and user-friendly solutions.
+                    Specializing in the MERN stack (MongoDB, Express.js, React, Node.js), I transform 
+                    complex business requirements into elegant, user-centric applications. My expertise 
+                    extends to modern frameworks like Next.js, TypeScript, and cloud technologies, 
+                    enabling me to architect robust solutions that scale seamlessly.
                   </p>
 
                   <p>
-                    Beyond coding, I'm deeply involved in the tech community,
-                    contributing to open-source projects, mentoring aspiring
-                    developers, and staying at the forefront of emerging
-                    technologies.
+                    What sets me apart is my holistic approach—combining technical proficiency with 
+                    strong problem-solving skills and a keen eye for design. I don't just write code; 
+                    I engineer experiences that resonate with users and drive engagement. Whether it's 
+                    optimizing performance, implementing secure authentication systems, or creating 
+                    intuitive interfaces, I bring dedication and innovation to every project.
+                  </p>
+
+                  <p>
+                    Beyond development, I'm committed to continuous learning and staying ahead of 
+                    industry trends. I actively contribute to the developer community, embrace best 
+                    practices, and believe in writing clean, maintainable code that stands the test 
+                    of time.
                   </p>
                 </div>
 
                 {/* Skills preview */}
-                <div className="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
-                  <h4 className="text-lg font-semibold mb-4 text-gray-800 dark:text-gray-200">
+                <div className="mt-8 pt-6 border-t border-[#B4CF66]/30 dark:border-[#44803F]/30">
+                  <h4 className="text-lg font-semibold mb-4 text-gray-800 dark:text-white">
                     Core Expertise
                   </h4>
                   <div className="flex flex-wrap gap-3">
-                    {["React", "Node.js", "TypeScript", "MongoDB", "AWS"].map(
+                    {["React", "Node.js", "TypeScript", "MongoDB", "Python"].map(
                       (skill) => (
                         <span
                           key={skill}
-                          className="px-4 py-2 bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900/30 dark:to-purple-900/30 text-blue-800 dark:text-blue-300 rounded-full text-sm font-medium hover:scale-105 transition-transform duration-200"
+                          className="px-4 py-2 bg-gradient-to-r from-[#FFEC5C] to-[#B4CF66] dark:from-[#44803F]/40 dark:to-[#B4CF66]/40 text-[#146152] dark:text-[#FFEC5C] rounded-full text-sm font-medium hover:scale-105 transition-transform duration-200"
                         >
                           {skill}
                         </span>
@@ -584,7 +568,7 @@ export default function Home() {
               <div className="flex gap-4">
                 <a
                   href="#skills"
-                  className="flex-1 px-6 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-xl font-medium text-center transition-all duration-300 flex items-center justify-center gap-2 hover:scale-105 shadow-lg"
+                  className="flex-1 px-6 py-4 bg-gradient-to-r from-[#146152] to-[#44803F] hover:from-[#44803F] hover:to-[#B4CF66] text-white rounded-xl font-medium text-center transition-all duration-300 flex items-center justify-center gap-2 hover:scale-105 shadow-lg"
                 >
                   <Code className="w-5 h-5" />
                   View Skills
@@ -592,7 +576,7 @@ export default function Home() {
 
                 <a
                   href="#contact"
-                  className="flex-1 px-6 py-4 border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white rounded-xl font-medium text-center transition-all duration-300 flex items-center justify-center gap-2 hover:scale-105"
+                  className="flex-1 px-6 py-4 border-2 border-[#146152] dark:border-[#B4CF66] text-[#146152] dark:text-[#B4CF66] hover:bg-[#146152] hover:text-white dark:hover:bg-[#B4CF66] dark:hover:text-[#146152] rounded-xl font-medium text-center transition-all duration-300 flex items-center justify-center gap-2 hover:scale-105"
                 >
                   <Mail className="w-5 h-5" />
                   Get in Touch
@@ -607,17 +591,17 @@ export default function Home() {
       <section ref={skillsRef} id="skills" className="py-20 opacity-0">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text font-display">
               My Skills
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-6"></div>
-            <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+            <div className="w-24 h-1 bg-gradient-to-r from-[#146152] to-[#B4CF66] mx-auto mb-6"></div>
+            <p className="text-xl text-gray-600 dark:text-gray-200 max-w-3xl mx-auto">
               Technologies and tools I work with
             </p>
           </div>
 
           {/* Skills grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             {skills.map((skill, index) => (
               <div
                 key={index}
@@ -647,7 +631,7 @@ export default function Home() {
                 (tech) => (
                   <span
                     key={tech}
-                    className="px-4 py-2 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm text-gray-700 dark:text-gray-300 rounded-full text-sm font-medium hover:bg-gradient-to-r hover:from-blue-100 hover:to-purple-100 dark:hover:from-blue-900/30 dark:hover:to-purple-900/30 transition-all duration-300 hover:scale-105 border border-gray-200/50 dark:border-gray-700/50"
+                    className="px-4 py-2 bg-white/80 dark:bg-[#146152]/30 backdrop-blur-sm text-gray-700 dark:text-gray-100 rounded-full text-sm font-medium hover:bg-gradient-to-r hover:from-[#FFEC5C] hover:to-[#B4CF66] dark:hover:from-[#44803F]/40 dark:hover:to-[#B4CF66]/40 transition-all duration-300 hover:scale-105 border border-[#B4CF66]/30 dark:border-[#44803F]/30"
                   >
                     {tech}
                   </span>
@@ -662,15 +646,15 @@ export default function Home() {
       <section
         ref={projectsRef}
         id="projects"
-        className="py-20 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm opacity-0"
+        className="py-20 bg-white/70 dark:bg-[#146152]/30 backdrop-blur-sm opacity-0"
       >
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text font-display">
               Featured Work
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-6"></div>
-            <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+            <div className="w-24 h-1 bg-gradient-to-r from-[#146152] to-[#B4CF66] mx-auto mb-6"></div>
+            <p className="text-xl text-gray-600 dark:text-gray-200 max-w-3xl mx-auto">
               A showcase of projects that demonstrate my skills and passion for
               innovation
             </p>
@@ -702,7 +686,7 @@ export default function Home() {
                             key={project._id}
                             className="w-full flex-shrink-0"
                           >
-                            <div className="grid lg:grid-cols-2 gap-8 items-center p-8 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm rounded-2xl shadow-2xl border border-gray-200/50 dark:border-gray-700/50">
+                            <div className="grid lg:grid-cols-2 gap-8 items-center p-8 bg-white/90 dark:bg-[#146152]/50 backdrop-blur-sm rounded-2xl shadow-2xl border border-[#B4CF66]/30 dark:border-[#44803F]/30">
                               {/* Project image */}
                               <div className="relative group">
                                 <div className="relative overflow-hidden rounded-xl">
@@ -733,13 +717,13 @@ export default function Home() {
                               {/* Project details */}
                               <div className="space-y-6">
                                 <div>
-                                  <div className="text-sm font-semibold text-blue-600 dark:text-blue-400 mb-2">
+                                  <div className="text-sm font-semibold text-[#146152] dark:text-[#B4CF66] mb-2">
                                     {project.category || "Project"}
                                   </div>
-                                  <h4 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">
+                                  <h4 className="text-3xl font-bold mb-4 text-gray-900 dark:text-gray-100">
                                     {project.title}
                                   </h4>
-                                  <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
+                                  <p className="text-lg text-gray-600 dark:text-gray-200 leading-relaxed">
                                     {project.description}
                                   </p>
                                 </div>
@@ -749,7 +733,7 @@ export default function Home() {
                                     project.tags.map((tag, i) => (
                                       <span
                                         key={i}
-                                        className="px-3 py-1 bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900/30 dark:to-purple-900/30 text-blue-800 dark:text-blue-300 rounded-full text-sm font-medium"
+                                        className="px-3 py-1 bg-gradient-to-r from-[#FFEC5C] to-[#B4CF66] dark:from-[#44803F]/40 dark:to-[#B4CF66]/40 text-[#146152] dark:text-[#FFEC5C] rounded-full text-sm font-medium"
                                       >
                                         {tag}
                                       </span>
@@ -761,7 +745,7 @@ export default function Home() {
                                     href={project.link}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-xl font-semibold transition-all duration-300 hover:scale-105 shadow-lg"
+                                    className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#146152] to-[#44803F] hover:from-[#44803F] hover:to-[#B4CF66] text-white rounded-xl font-semibold transition-all duration-300 hover:scale-105 shadow-lg"
                                   >
                                     <ExternalLink className="w-5 h-5" />
                                     View Project
@@ -783,8 +767,8 @@ export default function Home() {
                             onClick={() => setActiveProject(index)}
                             className={`w-3 h-3 rounded-full transition-all duration-300 ${
                               activeProject === index
-                                ? "bg-gradient-to-r from-blue-600 to-purple-600 scale-125"
-                                : "bg-gray-300 dark:bg-gray-600 hover:bg-gray-400 dark:hover:bg-gray-500"
+                                ? "bg-gradient-to-r from-[#146152] to-[#44803F] scale-125"
+                                : "bg-[#B4CF66]/50 dark:bg-[#44803F]/50 hover:bg-[#B4CF66] dark:hover:bg-[#44803F]"
                             }`}
                           />
                         ))}
@@ -811,8 +795,8 @@ export default function Home() {
                         onClick={() => setActiveCategory(category)}
                         className={`px-6 py-3 rounded-xl font-medium transition-all duration-300 hover:scale-105 ${
                           activeCategory === category
-                            ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg"
-                            : "bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-800"
+                            ? "bg-gradient-to-r from-[#146152] to-[#44803F] text-white shadow-lg"
+                            : "bg-white/80 dark:bg-[#146152]/30 backdrop-blur-sm text-gray-700 dark:text-gray-300 border border-[#B4CF66]/50 dark:border-[#44803F]/50 hover:bg-[#FFEC5C] dark:hover:bg-[#146152]/50"
                         }`}
                       >
                         {category}
@@ -827,7 +811,7 @@ export default function Home() {
                     {filteredProjects.map((project) => (
                       <div
                         key={project._id}
-                        className="group bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-gray-200/50 dark:border-gray-700/50"
+                        className="group bg-white/90 dark:bg-[#146152]/50 backdrop-blur-sm rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-[#B4CF66]/30 dark:border-[#44803F]/30"
                       >
                         {/* Project image */}
                         <div className="relative overflow-hidden h-48">
@@ -843,35 +827,24 @@ export default function Home() {
 
                           {/* Hover overlay */}
                           <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                            <div className="flex gap-3">
-                              <a
-                                href={project.link}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="p-3 bg-white rounded-full hover:bg-gray-100 transition-colors duration-300 hover:scale-110"
-                                aria-label="View project"
-                              >
-                                <ExternalLink className="w-5 h-5 text-gray-900" />
-                              </a>
-                              <a
-                                href={project.github || project.link}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="p-3 bg-gray-900 rounded-full hover:bg-gray-800 transition-colors duration-300 hover:scale-110"
-                                aria-label="View source code"
-                              >
-                                <GitHub className="w-5 h-5 text-white" />
-                              </a>
-                            </div>
+                            <a
+                              href={project.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="p-3 bg-white rounded-full hover:bg-gray-100 transition-colors duration-300 hover:scale-110"
+                              aria-label="View project"
+                            >
+                              <ExternalLink className="w-5 h-5 text-gray-900" />
+                            </a>
                           </div>
                         </div>
 
                         {/* Project content */}
                         <div className="p-6">
-                          <h4 className="text-xl font-bold mb-3 text-gray-900 dark:text-white">
+                          <h4 className="text-xl font-bold mb-3 text-gray-900 dark:text-gray-100">
                             {project.title}
                           </h4>
-                          <p className="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed line-clamp-3">
+                          <p className="text-gray-600 dark:text-gray-200 mb-4 leading-relaxed line-clamp-3">
                             {project.description}
                           </p>
 
@@ -880,7 +853,7 @@ export default function Home() {
                               project.tags.map((tag, i) => (
                                 <span
                                   key={i}
-                                  className="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full text-xs font-medium"
+                                  className="px-3 py-1 bg-[#FFEC5C]/50 dark:bg-[#44803F]/30 text-[#146152] dark:text-[#FFEC5C] rounded-full text-xs font-medium"
                                 >
                                   {tag}
                                 </span>
@@ -891,7 +864,7 @@ export default function Home() {
                             href={project.link}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 font-semibold hover:text-purple-600 dark:hover:text-purple-400 transition-colors duration-300"
+                            className="inline-flex items-center gap-2 text-[#146152] dark:text-[#B4CF66] font-semibold hover:text-[#44803F] dark:hover:text-[#FFEC5C] transition-colors duration-300"
                           >
                             View Project
                             <ArrowRight className="w-4 h-4" />
@@ -912,10 +885,10 @@ export default function Home() {
               {/* View all projects CTA */}
               <div className="text-center mt-16">
                 <a
-                  href="https://github.com/yourusername"
+                  href="https://github.com/DHRUV-85"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 shadow-lg"
+                  className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#146152] to-[#44803F] hover:from-[#44803F] hover:to-[#B4CF66] text-white rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 shadow-lg"
                 >
                   <GitHub className="w-6 h-6" />
                   View All Projects on GitHub
@@ -931,11 +904,11 @@ export default function Home() {
       <section ref={contactRef} id="contact" className="py-20 opacity-0">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text font-display">
               Let's Connect
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-6"></div>
-            <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+            <div className="w-24 h-1 bg-gradient-to-r from-[#146152] to-[#B4CF66] mx-auto mb-6"></div>
+            <p className="text-xl text-gray-600 dark:text-gray-200 max-w-3xl mx-auto">
               Ready to bring your next project to life? Let's discuss how we can
               work together.
             </p>
@@ -943,21 +916,26 @@ export default function Home() {
 
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             {/* Contact form */}
-            <div className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-gray-200/50 dark:border-gray-700/50">
-              <div className="mb-8">
-                <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+            <div className="relative bg-white/90 dark:bg-[#146152]/50 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border-2 border-[#B4CF66] dark:border-[#FFEC5C] hover:shadow-[0_0_30px_rgba(180,207,102,0.4)] dark:hover:shadow-[0_0_30px_rgba(255,236,92,0.3)] transition-all duration-300">
+              {/* Decorative corner accents */}
+              <div className="absolute -top-2 -left-2 w-8 h-8 bg-gradient-to-br from-[#B4CF66] to-[#FFEC5C] rounded-full"></div>
+              <div className="absolute -top-2 -right-2 w-8 h-8 bg-gradient-to-br from-[#FFEC5C] to-[#FF5A33] rounded-full"></div>
+              <div className="absolute -bottom-2 -left-2 w-8 h-8 bg-gradient-to-br from-[#44803F] to-[#B4CF66] rounded-full"></div>
+              <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-gradient-to-br from-[#146152] to-[#44803F] rounded-full"></div>
+              <div className="mb-8 relative">
+                <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-[#146152] to-[#44803F] dark:from-[#B4CF66] dark:to-[#FFEC5C] bg-clip-text text-transparent">
                   Send me a message
                 </h3>
-                <p className="text-gray-600 dark:text-gray-400">
+                <p className="text-gray-600 dark:text-gray-200">
                   I'll get back to you within 24 hours.
                 </p>
               </div>
 
               {/* Success/Error Messages */}
               {submitStatus === "success" && (
-                <div className="mb-6 p-4 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-xl">
+                <div className="mb-6 p-4 bg-[#FFEC5C] dark:bg-[#44803F]/30 border border-[#B4CF66] dark:border-[#44803F] rounded-xl">
                   <div className="flex items-center gap-3">
-                    <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                    <div className="w-6 h-6 bg-[#146152] rounded-full flex items-center justify-center">
                       <svg
                         className="w-4 h-4 text-white"
                         fill="none"
@@ -972,7 +950,7 @@ export default function Home() {
                         />
                       </svg>
                     </div>
-                    <p className="text-green-700 dark:text-green-300 font-medium">
+                    <p className="text-[#146152] dark:text-[#FFEC5C] font-medium">
                       Message sent successfully! I'll get back to you soon.
                     </p>
                   </div>
@@ -980,9 +958,9 @@ export default function Home() {
               )}
 
               {submitStatus === "error" && (
-                <div className="mb-6 p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-xl">
+                <div className="mb-6 p-4 bg-[#FF5A33]/20 dark:bg-[#44803F]/30 border border-[#FF5A33] dark:border-[#44803F] rounded-xl">
                   <div className="flex items-center gap-3">
-                    <div className="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center">
+                    <div className="w-6 h-6 bg-[#FF5A33] rounded-full flex items-center justify-center">
                       <svg
                         className="w-4 h-4 text-white"
                         fill="none"
@@ -997,7 +975,7 @@ export default function Home() {
                         />
                       </svg>
                     </div>
-                    <p className="text-red-700 dark:text-red-300 font-medium">
+                    <p className="text-[#146152] dark:text-[#FFEC5C] font-medium">
                       Failed to send message. Please try again.
                     </p>
                   </div>
@@ -1021,7 +999,7 @@ export default function Home() {
                       onChange={handleContactInputChange}
                       required
                       disabled={isSubmitting}
-                      className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all duration-300 disabled:opacity-50"
+                      className="w-full px-4 py-3 border-2 border-[#B4CF66]/50 dark:border-[#44803F]/50 rounded-xl bg-white/80 dark:bg-[#146152]/30 backdrop-blur-sm text-gray-900 dark:text-white focus:ring-4 focus:ring-[#B4CF66]/50 dark:focus:ring-[#FFEC5C]/50 focus:border-[#146152] dark:focus:border-[#FFEC5C] focus:shadow-[0_0_20px_rgba(180,207,102,0.3)] dark:focus:shadow-[0_0_20px_rgba(255,236,92,0.3)] outline-none transition-all duration-300 disabled:opacity-50"
                       placeholder="Your full name"
                     />
                   </div>
@@ -1040,7 +1018,7 @@ export default function Home() {
                       onChange={handleContactInputChange}
                       required
                       disabled={isSubmitting}
-                      className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all duration-300 disabled:opacity-50"
+                      className="w-full px-4 py-3 border-2 border-[#B4CF66]/50 dark:border-[#44803F]/50 rounded-xl bg-white/80 dark:bg-[#146152]/30 backdrop-blur-sm text-gray-900 dark:text-white focus:ring-4 focus:ring-[#B4CF66]/50 dark:focus:ring-[#FFEC5C]/50 focus:border-[#146152] dark:focus:border-[#FFEC5C] focus:shadow-[0_0_20px_rgba(180,207,102,0.3)] dark:focus:shadow-[0_0_20px_rgba(255,236,92,0.3)] outline-none transition-all duration-300 disabled:opacity-50"
                       placeholder="your@email.com"
                     />
                   </div>
@@ -1061,7 +1039,7 @@ export default function Home() {
                     onChange={handleContactInputChange}
                     required
                     disabled={isSubmitting}
-                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all duration-300 disabled:opacity-50"
+                    className="w-full px-4 py-3 border-2 border-[#B4CF66]/50 dark:border-[#44803F]/50 rounded-xl bg-white/80 dark:bg-[#146152]/30 backdrop-blur-sm text-gray-900 dark:text-white focus:ring-4 focus:ring-[#B4CF66]/50 dark:focus:ring-[#FFEC5C]/50 focus:border-[#146152] dark:focus:border-[#FFEC5C] focus:shadow-[0_0_20px_rgba(180,207,102,0.3)] dark:focus:shadow-[0_0_20px_rgba(255,236,92,0.3)] outline-none transition-all duration-300 disabled:opacity-50"
                     placeholder="What's this about?"
                   />
                 </div>
@@ -1081,7 +1059,7 @@ export default function Home() {
                     required
                     disabled={isSubmitting}
                     rows={6}
-                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all duration-300 resize-none disabled:opacity-50"
+                    className="w-full px-4 py-3 border-2 border-[#B4CF66]/50 dark:border-[#44803F]/50 rounded-xl bg-white/80 dark:bg-[#146152]/30 backdrop-blur-sm text-gray-900 dark:text-white focus:ring-4 focus:ring-[#B4CF66]/50 dark:focus:ring-[#FFEC5C]/50 focus:border-[#146152] dark:focus:border-[#FFEC5C] focus:shadow-[0_0_20px_rgba(180,207,102,0.3)] dark:focus:shadow-[0_0_20px_rgba(255,236,92,0.3)] outline-none transition-all duration-300 resize-none disabled:opacity-50"
                     placeholder="Tell me about your project or just say hello..."
                   ></textarea>
                 </div>
@@ -1089,7 +1067,7 @@ export default function Home() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full py-4 px-8 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-xl font-semibold text-lg transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-3 hover:scale-105 shadow-lg"
+                  className="w-full py-4 px-8 bg-gradient-to-r from-[#146152] to-[#44803F] hover:from-[#44803F] hover:to-[#B4CF66] text-white rounded-xl font-semibold text-lg transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-3 hover:scale-105 shadow-lg"
                 >
                   {isSubmitting ? (
                     <>
@@ -1109,17 +1087,17 @@ export default function Home() {
             {/* Contact info and social links */}
             <div className="space-y-8">
               {/* Contact methods */}
-              <div className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-gray-200/50 dark:border-gray-700/50">
-                <h3 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
+              <div className="bg-white/90 dark:bg-[#146152]/50 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-[#B4CF66]/30 dark:border-[#44803F]/30">
+                <h3 className="text-2xl font-bold mb-6 text-gray-900 dark:text-gray-100">
                   Get in Touch
                 </h3>
 
                 <div className="space-y-6">
                   <a
                     href="mailto:sonidhruv557@gmail.com"
-                    className="flex items-center gap-4 p-4 rounded-xl bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 hover:from-blue-100 hover:to-purple-100 dark:hover:from-blue-900/30 dark:hover:to-purple-900/30 transition-all duration-300 hover:scale-105"
+                    className="flex items-center gap-4 p-4 rounded-xl bg-gradient-to-r from-[#FFEC5C] to-[#B4CF66] dark:from-[#44803F]/20 dark:to-[#B4CF66]/20 hover:from-[#B4CF66] hover:to-[#FFEC5C] dark:hover:from-[#44803F]/30 dark:hover:to-[#B4CF66]/30 transition-all duration-300 hover:scale-105 border-2 border-transparent hover:border-[#146152] dark:hover:border-[#FFEC5C] hover:shadow-[0_0_20px_rgba(180,207,102,0.4)] dark:hover:shadow-[0_0_20px_rgba(255,236,92,0.3)]"
                   >
-                    <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl flex items-center justify-center">
+                    <div className="w-12 h-12 bg-gradient-to-r from-[#146152] to-[#44803F] rounded-xl flex items-center justify-center">
                       <Mail className="w-6 h-6 text-white" />
                     </div>
                     <div>
@@ -1136,9 +1114,9 @@ export default function Home() {
                     href="https://linkedin.com/in/dhruvsoni"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-4 p-4 rounded-xl bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 hover:from-blue-100 hover:to-purple-100 dark:hover:from-blue-900/30 dark:hover:to-purple-900/30 transition-all duration-300 hover:scale-105"
+                    className="flex items-center gap-4 p-4 rounded-xl bg-gradient-to-r from-[#FFEC5C] to-[#B4CF66] dark:from-[#44803F]/20 dark:to-[#B4CF66]/20 hover:from-[#B4CF66] hover:to-[#FFEC5C] dark:hover:from-[#44803F]/30 dark:hover:to-[#B4CF66]/30 transition-all duration-300 hover:scale-105 border-2 border-transparent hover:border-[#146152] dark:hover:border-[#FFEC5C] hover:shadow-[0_0_20px_rgba(180,207,102,0.4)] dark:hover:shadow-[0_0_20px_rgba(255,236,92,0.3)]"
                   >
-                    <div className="w-12 h-12 bg-gradient-to-r from-blue-700 to-blue-600 rounded-xl flex items-center justify-center">
+                    <div className="w-12 h-12 bg-gradient-to-r from-[#44803F] to-[#B4CF66] rounded-xl flex items-center justify-center">
                       <LinkedIn className="w-6 h-6 text-white" />
                     </div>
                     <div>
@@ -1155,9 +1133,9 @@ export default function Home() {
                     href="https://github.com/dhruvsoni"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-4 p-4 rounded-xl bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 hover:from-blue-100 hover:to-purple-100 dark:hover:from-blue-900/30 dark:hover:to-purple-900/30 transition-all duration-300 hover:scale-105"
+                    className="flex items-center gap-4 p-4 rounded-xl bg-gradient-to-r from-[#FFEC5C] to-[#B4CF66] dark:from-[#44803F]/20 dark:to-[#B4CF66]/20 hover:from-[#B4CF66] hover:to-[#FFEC5C] dark:hover:from-[#44803F]/30 dark:hover:to-[#B4CF66]/30 transition-all duration-300 hover:scale-105 border-2 border-transparent hover:border-[#146152] dark:hover:border-[#FFEC5C] hover:shadow-[0_0_20px_rgba(180,207,102,0.4)] dark:hover:shadow-[0_0_20px_rgba(255,236,92,0.3)]"
                   >
-                    <div className="w-12 h-12 bg-gradient-to-r from-gray-800 to-gray-600 dark:from-gray-600 dark:to-gray-500 rounded-xl flex items-center justify-center">
+                    <div className="w-12 h-12 bg-gradient-to-r from-[#146152] to-[#44803F] rounded-xl flex items-center justify-center">
                       <GitHub className="w-6 h-6 text-white" />
                     </div>
                     <div>
@@ -1173,19 +1151,19 @@ export default function Home() {
               </div>
 
               {/* Availability status */}
-              <div className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-gray-200/50 dark:border-gray-700/50">
-                <h3 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
+              <div className="bg-white/90 dark:bg-[#146152]/50 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-[#B4CF66]/30 dark:border-[#44803F]/30">
+                <h3 className="text-2xl font-bold mb-6 text-gray-900 dark:text-gray-100">
                   Current Status
                 </h3>
 
                 <div className="flex items-center gap-4 mb-6">
-                  <div className="w-4 h-4 bg-green-500 rounded-full animate-pulse"></div>
-                  <span className="text-lg font-semibold text-green-600 dark:text-green-400">
+                  <div className="w-4 h-4 bg-[#44803F] rounded-full animate-pulse"></div>
+                  <span className="text-lg font-semibold text-[#146152] dark:text-[#B4CF66]">
                     Available for new projects
                   </span>
                 </div>
 
-                <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
+                <p className="text-gray-600 dark:text-gray-100 mb-6 leading-relaxed">
                   I'm currently accepting new freelance projects and would love
                   to help bring your ideas to life. Let's discuss how we can
                   work together to create something amazing.
@@ -1193,15 +1171,15 @@ export default function Home() {
 
                 <div className="space-y-3">
                   <div className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
-                    <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                    <div className="w-2 h-2 bg-[#146152] rounded-full"></div>
                     <span>Response time: Within 24 hours</span>
                   </div>
                   <div className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
-                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                    <div className="w-2 h-2 bg-[#44803F] rounded-full"></div>
                     <span>Project start: 1-2 weeks</span>
                   </div>
                   <div className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
-                    <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
+                    <div className="w-2 h-2 bg-[#B4CF66] rounded-full"></div>
                     <span>Free consultation available</span>
                   </div>
                 </div>
@@ -1212,14 +1190,14 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="py-16 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm border-t border-gray-200/50 dark:border-gray-700/50">
+      <footer className="py-16 bg-white/70 dark:bg-[#146152]/30 backdrop-blur-sm border-t border-[#B4CF66]/30 dark:border-[#44803F]/30">
         <div className="max-w-6xl mx-auto px-4 text-center">
           {/* Logo and brand */}
           <div className="mb-8">
-            <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="w-16 h-16 bg-gradient-to-r from-[#146152] to-[#44803F] rounded-full flex items-center justify-center mx-auto mb-4">
               <span className="text-2xl font-bold text-white">DS</span>
             </div>
-            <h3 className="text-2xl font-bold mb-2 gradient-text">
+            <h3 className="text-2xl font-bold mb-2 gradient-text font-display">
               Dhruv Soni
             </h3>
             <p className="text-gray-600 dark:text-gray-400 max-w-md mx-auto">
@@ -1232,25 +1210,25 @@ export default function Home() {
           <div className="flex flex-wrap justify-center gap-8 mb-8 text-sm">
             <a
               href="#about"
-              className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 font-medium"
+              className="text-gray-600 dark:text-gray-400 hover:text-[#146152] dark:hover:text-[#B4CF66] transition-colors duration-300 font-medium"
             >
               About
             </a>
             <a
               href="#skills"
-              className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 font-medium"
+              className="text-gray-600 dark:text-gray-400 hover:text-[#146152] dark:hover:text-[#B4CF66] transition-colors duration-300 font-medium"
             >
               Skills
             </a>
             <a
               href="#projects"
-              className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 font-medium"
+              className="text-gray-600 dark:text-gray-400 hover:text-[#146152] dark:hover:text-[#B4CF66] transition-colors duration-300 font-medium"
             >
               Projects
             </a>
             <a
               href="#contact"
-              className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 font-medium"
+              className="text-gray-600 dark:text-gray-400 hover:text-[#146152] dark:hover:text-[#B4CF66] transition-colors duration-300 font-medium"
             >
               Contact
             </a>
@@ -1260,25 +1238,25 @@ export default function Home() {
           <div className="flex justify-center gap-6 mb-8">
             <a
               href="mailto:sonidhruv557@gmail.com"
-              className="w-12 h-12 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border border-gray-300/50 dark:border-gray-600/50 rounded-xl flex items-center justify-center hover:bg-blue-50 dark:hover:bg-blue-900/20 hover:border-blue-300 dark:hover:border-blue-600 transition-all duration-300 hover:scale-110"
+              className="w-12 h-12 bg-white/80 dark:bg-[#146152]/50 backdrop-blur-sm border border-[#B4CF66]/50 dark:border-[#44803F]/50 rounded-xl flex items-center justify-center hover:bg-[#FFEC5C] dark:hover:bg-[#44803F]/30 hover:border-[#146152] dark:hover:border-[#B4CF66] transition-all duration-300 hover:scale-110"
               aria-label="Email"
             >
               <Mail className="w-5 h-5 text-gray-600 dark:text-gray-400" />
             </a>
             <a
-              href="https://github.com/dhruvsoni"
+              href="https://github.com/DHRUV-85"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-12 h-12 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border border-gray-300/50 dark:border-gray-600/50 rounded-xl flex items-center justify-center hover:bg-gray-50 dark:hover:bg-gray-800 hover:border-gray-400 dark:hover:border-gray-500 transition-all duration-300 hover:scale-110"
+              className="w-12 h-12 bg-white/80 dark:bg-[#146152]/50 backdrop-blur-sm border border-[#B4CF66]/50 dark:border-[#44803F]/50 rounded-xl flex items-center justify-center hover:bg-[#FFEC5C] dark:hover:bg-[#44803F]/30 hover:border-[#146152] dark:hover:border-[#B4CF66] transition-all duration-300 hover:scale-110"
               aria-label="GitHub"
             >
               <GitHub className="w-5 h-5 text-gray-600 dark:text-gray-400" />
             </a>
             <a
-              href="https://linkedin.com/in/dhruvsoni"
+              href="https://www.linkedin.com/in/dhruv-soni-62b998391/"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-12 h-12 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border border-gray-300/50 dark:border-gray-600/50 rounded-xl flex items-center justify-center hover:bg-blue-50 dark:hover:bg-blue-900/20 hover:border-blue-300 dark:hover:border-blue-600 transition-all duration-300 hover:scale-110"
+              className="w-12 h-12 bg-white/80 dark:bg-[#146152]/50 backdrop-blur-sm border border-[#B4CF66]/50 dark:border-[#44803F]/50 rounded-xl flex items-center justify-center hover:bg-[#FFEC5C] dark:hover:bg-[#44803F]/30 hover:border-[#146152] dark:hover:border-[#B4CF66] transition-all duration-300 hover:scale-110"
               aria-label="LinkedIn"
             >
               <LinkedIn className="w-5 h-5 text-gray-600 dark:text-gray-400" />
@@ -1286,8 +1264,8 @@ export default function Home() {
           </div>
 
           {/* Copyright */}
-          <div className="border-t border-gray-200/50 dark:border-gray-700/50 pt-8">
-            <p className="text-gray-500 dark:text-gray-500 text-sm">
+          <div className="border-t border-[#B4CF66]/30 dark:border-[#44803F]/30 pt-8">
+            <p className="text-gray-500 dark:text-gray-300 text-sm">
               © {new Date().getFullYear()} Dhruv Soni. Crafted with ❤️ and lots
               of coffee.
             </p>

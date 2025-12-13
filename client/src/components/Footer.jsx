@@ -19,7 +19,7 @@ export default function Footer() {
             <Mail size={22} />
           </a>
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/DHRUV-85"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-600 dark:hover:text-cyan-400 transition"
@@ -28,7 +28,7 @@ export default function Footer() {
             <GitHub size={22} />
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/dhruv-soni-62b998391/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-600 dark:hover:text-cyan-400 transition"

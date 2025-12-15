@@ -463,7 +463,7 @@ export default function Home() {
                 </a>
 
                 <a
-                  href="/resume.pdf"
+                  href="/dhruv_resume(1).pdf"
                   target="_blank"
                   rel="noreferrer"
                   className="px-8 py-4 border-2 border-[#146152] dark:border-[#B4CF66] text-[#146152] dark:text-[#B4CF66] hover:bg-[#FFEC5C] dark:hover:bg-[#146152]/30 rounded-xl font-semibold text-lg transition-all duration-300 flex items-center gap-2 hover:scale-105"
